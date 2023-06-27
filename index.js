@@ -30,6 +30,6 @@ io.on("connection", (socket) => {
     })
 });
 
-const port = proccess.env.PORT || 3000;
+const port = 3000;
 
 io.listen(port);
