@@ -1,8 +1,11 @@
+
 const { Server } = require("socket.io");
+const Port = process.env.PORT;
+const Origin = process.env.CORS_ORIGIN;
 
 const io = new Server({
     cors: {
-        origin: process.env.CORS_ORIGIN || "http://localhost:3001",
+        origin: Origin || "http://localhost:3001",
         methods: ["GET", "POST"]
     }
 });
@@ -30,6 +33,6 @@ io.on("connection", (socket) => {
     })
 });
 
-const port = process.env.PORT || 3000;
+const port = Port || 3000;
 
 io.listen(port);

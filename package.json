@@ -19,6 +19,7 @@
   "homepage": "https://github.com/nahuel-retamoso/chat-backend#readme",
   "dependencies": {
     "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
     "socket.io": "^4.5.4"
   }
 }
